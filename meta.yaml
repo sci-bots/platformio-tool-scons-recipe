@@ -1,0 +1,12 @@
+{% set VERSION = '3.30001.0' %}
+package:
+  name: platformio-tool-scons
+  version: {{ VERSION }}
+
+build:
+  # If this is a new build for the same version, increment the build
+  # number. If you do not include this key, it defaults to 0.
+  number: 0
+
+source:
+  url: https://dl.bintray.com/platformio/dl-packages/tool-scons-{{ VERSION }}.tar.gz
