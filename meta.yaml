@@ -20,7 +20,7 @@ build:
       install_dir = os.path.join(os.environ['PREFIX'], 'share', 'platformio', '{{ PKG_TYPE }}s', '{{ PIO_PKG_NAME }}');
       shutil.copytree(os.environ['SRC_DIR'], install_dir);
       os.remove(os.path.join(install_dir, 'bld.bat'));  # [win]
-      os.remove(os.path.join(install_dir, 'build.sh'));  # [not win]
+      os.remove(os.path.join(install_dir, 'conda_build.sh'));  # [not win]
       "
 
 requirements:
